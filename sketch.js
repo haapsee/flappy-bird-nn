@@ -32,7 +32,7 @@ class GameGenerator {
                 layer.bias = Matrix.add(x.bias, 0);
                 return layer;
             });
-            birds.slice(1, birds.length).forEach(bird => bird.brain = birds[0].brain.copy(mr));
+            birds.slice(1, birds.length).forEach(bird => bird.brain = birds[0].brain.copy(mr/10));
             birds.forEach(bird => {
                 bird.isdead = false;
                 bird.bird.position.y = BIRBSTART;
