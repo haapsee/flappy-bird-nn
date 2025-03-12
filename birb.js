@@ -7,10 +7,10 @@ class Birb {
         this.bird.velocity.y = 0;
         this.brain = new NN([
             new Layer(4, 8),
-            new Layer(8, 16),
+            new Layer(8, 8),
             // new Layer(16, 32),
             // new Layer(32, 16),
-            new Layer(16, 8),
+            //new Layer(16, 8),
             new Layer(8, 2)
         ]); // bird y.position, y.velocity, 2x (pipe.y, pipe.x)
         this.isdead = false;
